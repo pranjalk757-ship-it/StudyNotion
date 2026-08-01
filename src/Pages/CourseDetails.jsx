@@ -73,7 +73,7 @@ function CourseDetails() {
                     <div className='flex flex-row gap-10 text-richblack-25'>
                         <div className='flex flex-row gap-2 items-center'>
                             <FaRegCalendarCheck></FaRegCalendarCheck>
-                            Created at {courseData?.createdAt.split('T')?.[0]}
+                            Created at {courseData?.createdAt?.split('T')?.[0]}
                         </div>
                         <div className='flex flex-row gap-2 items-center'>
                             <FaLanguage></FaLanguage>

@@ -183,7 +183,7 @@ function StudentViewVideo() {
                         <p>{videoData?.description}</p>
                     </div>
                     <div className='text-md text-richblack-50 mt-2'>
-                        <p>{videoData?.createdAt.split('T')[0]}</p>
+                        <p>{videoData?.createdAt?.split('T')[0]}</p>
                     </div>
                 </div>
             </div>
