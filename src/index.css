@@ -1,20 +1,13 @@
-body,html{
-  height: 100%;
-  overflow-x: hidden;
-  overscroll-behavior-y: none;
-
-}
-/* index.css or App.css */
-
-.swiper-pagination-bullet {
-  background: #9ca3af !important;
-  opacity: 1 !important;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.swiper-pagination-bullet-active {
-  background: #facc15 !important;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
