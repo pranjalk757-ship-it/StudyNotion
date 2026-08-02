@@ -1,70 +1,182 @@
-# Getting Started with Create React App
+# 🎓 StudyNotion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+StudyNotion is a full-stack EdTech platform that enables students to enroll in courses, instructors to create and manage courses, and provides secure online payments for course purchases.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+- **Frontend:** https://studynotion-tau-coral.vercel.app/
+- **Backend:** https://studynotion-backend-rt0n.onrender.com/
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 👨‍🎓 Student
+- User Authentication (JWT)
+- Browse Courses
+- Purchase Courses
+- Watch Course Videos
+- Track Learning Progress
+- Edit Profile
+- Update Password
 
-### `npm test`
+### 👨‍🏫 Instructor
+- Create Courses
+- Edit Course Details
+- Upload Course Thumbnail
+- Add Sections & Lectures
+- Upload Videos
+- Instructor Dashboard
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 💳 Payments
+- Razorpay Integration
+- Secure Checkout
+- Purchase History
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend
+- React.js
+- Redux Toolkit
+- React Router DOM
+- Tailwind CSS
+- Axios
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Cloudinary
+- Razorpay
 
 ### Deployment
+- Frontend: Vercel
+- Backend: Render
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 📂 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+StudyNotion
+│
+├── client
+│   ├── public
+│   ├── src
+│   └── package.json
+│
+├── server
+│   ├── configuration
+│   ├── controllers
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   └── package.json
+│
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/pranjalk757-ship-it/StudyNotion.git
+cd StudyNotion
+```
+
+### Frontend
+
+```bash
+cd client
+npm install
+npm start
+```
+
+### Backend
+
+```bash
+cd server
+npm install
+npm run dev
+```
+
+---
+
+## 🔑 Environment Variables
+
+### Backend (.env)
+
+```env
+PORT=4000
+
+MONGODB_URL=your_mongodb_connection_string
+
+JWT_SECRET=your_jwt_secret
+
+CLOUD_NAME=your_cloudinary_name
+API_KEY=your_cloudinary_api_key
+API_SECRET=your_cloudinary_api_secret
+
+MAIL_HOST=your_mail_host
+MAIL_USER=your_mail_user
+MAIL_PASS=your_mail_password
+
+RAZORPAY_KEY=your_razorpay_key
+RAZORPAY_SECRET=your_razorpay_secret
+```
+
+### Frontend (.env)
+
+```env
+REACT_APP_BASE_URL=https://studynotion-backend-rt0n.onrender.com/api/v1
+REACT_APP_RAZORPAY_KEY=your_razorpay_key
+```
+
+---
+
+## 🌐 API Base URL
+
+```
+https://studynotion-backend-rt0n.onrender.com/api/v1
+```
+
+Example Endpoints
+
+```
+GET    /course/showAllCategories
+POST   /auth/signup
+POST   /auth/login
+GET    /profile/getUserDetails
+POST   /payment/capturePayment
+```
+
+---
+
+## 📦 Build
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+---
+
+## 👨‍💻 Author
+
+**Pranjal Kashyap**
+
+- GitHub: https://github.com/pranjalk757-ship-it
+
+---
+
+## ⭐ If you like this project
+
+Please consider giving this repository a ⭐ on GitHub.
