@@ -18,9 +18,13 @@ app.use(cookieparser());
 app.use(express.json());
 const PORT = process.env.PORT || 4000;
 
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://studynotion-tau-coral.vercel.app",
+];
 
 app.use(cors({
-    origin:'http://localhost:3000',
+    origin:allowedOrigins,
     credentials:true
 }))
 app.use(fileupload({
